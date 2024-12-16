@@ -24,6 +24,9 @@ export default defineConfig({
         changeOrigin: true,
       },
     },
+    headers: {
+      'Content-Security-Policy': `connect-src 'self' http://127.0.0.1:4943 http://localhost:* https://icp0.io https://*.icp0.io https://icp-api.io;`,
+    },
   },
   plugins: [
     react(),

@@ -3,6 +3,7 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
+  
   "scripts": {
     "setup": "npm i && dfx canister create crud_project_backend && dfx generate crud_project_backend && dfx deploy",
     "start": "vite --port 3000",
