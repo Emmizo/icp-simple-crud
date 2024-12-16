@@ -1,0 +1,26 @@
+{
+  "canisters": {
+    "crud_project_backend": {
+      "main": "src/crud_project_backend/main.mo",
+      "type": "motoko"
+    },
+    "crud_project_frontend": {
+      "dependencies": [
+        "crud_project_backend"
+      ],
+      "source": [
+        "src/crud_project_frontend/dist"
+      ],
+      "type": "assets",
+      "workspace": "crud_project_frontend"
+    }
+  },
+  "defaults": {
+    "build": {
+      "args": "",
+      "packtool": ""
+    }
+  },
+  "output_env_file": ".env",
+  "version": 1
+}
